@@ -1,0 +1,58 @@
+header {
+    justify-content: center;
+    align-items: center;
+    color: #FFA500;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+
+body {
+    justify-content: center;
+    text-align: center;
+    background: url(images/starry-sky.jpg);
+    color: #FFFFFF;
+    font-size: larger;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+}
+
+td:nth-child(1) {
+    width: 250px;
+}
+
+td:nth-child(2) {
+    width: 150px;
+}
+
+td {
+    border: 1px solid grey;
+}
+
+tbody td {
+    text-align: center;
+}
+
+
+.silly-page {
+    background: #000000;
+    color: #FFFFFF;
+    justify-content: center;
+    text-align: center;
+    line-height: 2;
+}
+
+.silly {
+    background-color: palevioletred;
+    font-size: 48px;
+}
+
+.diary {
+    margin: 64px auto 0 auto;
+    padding: 32px;
+    max-width: 1200px;
+    border-radius: 16px;
+    background: #ffffff1f;
+}
