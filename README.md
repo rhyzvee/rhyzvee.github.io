@@ -6,4 +6,7 @@ Currently a clone of https://rhyzvee.neocities.org. Files are updated manually a
 Expected update timing: Every Sundays
 
 # Attachment Copyrights
-Images in /images may be subject to copyright. Do not download them.
+Some images in /images are subject to copyright. Below images are exceptional.
+<code>
+  ./images/starry-sky.jpg
+</code>
