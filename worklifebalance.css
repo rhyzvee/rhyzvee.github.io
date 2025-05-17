@@ -1,3 +1,5 @@
+@import url(sanitize.css);
+
 header {
     justify-content: center;
     align-items: center;
@@ -9,50 +11,169 @@ header {
 body {
     justify-content: center;
     text-align: center;
-    background: url(images/starry-sky.jpg);
+    background: url(images/starry-sky.jpg) center top no-repeat;
+    background-size: cover;
+    background-color: #1a1a3a;
     color: #FFFFFF;
     font-size: larger;
 }
 
-table {
-    margin: auto;
-    border-collapse: collapse;
+nav {
+    background: fixed;
+    border-bottom: 5px solid grey;
 }
 
-td:nth-child(1) {
-    width: 250px;
-}
-
-td:nth-child(2) {
-    width: 150px;
-}
-
-td {
-    border: 1px solid grey;
-}
-
-tbody td {
-    text-align: center;
-}
-
-
-.silly-page {
-    background: #000000;
-    color: #FFFFFF;
+nav p {
+    display: flex;
+    list-style: none;
     justify-content: center;
-    text-align: center;
-    line-height: 2;
+    margin: 10px;
+    padding: 20px 10px 0 0;
+    color: rgb(0, 162, 255);
 }
 
-.silly {
-    background-color: palevioletred;
-    font-size: 48px;
+nav p a {
+    display: block;
+    padding: 0 10px;
+    text-decoration: none;
+    font-size: larger;
+    color: fixed;
 }
+
+.head-nav-wrapper {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: #161736;
+}
+
+.main-wrapper {
+    position: relative;
+    z-index: 0;
+    left: 0;
+    top: 8px;
+    width: 100%;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(90deg, #25b40a1a 0%, #25b4d2 50%, #25b40a1a 100%);
+}
+
+/* #286 291*/
+
+.GeneratedMarquee {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 1.25em;
+    font-style: italic;
+    line-height: 1em;
+    color: #0099FF;
+    background-color: #ffc40021;
+    padding: 0.5em;
+}
+
+.homelink {
+    transition: opacity 0.2s linear;
+}
+
+/* #293 */
+
+.homelink:hover {
+    opacity: 0.5;
+}
+
+.log-box {
+    overflow: scroll;
+    position: sticky;
+    top: 20px;
+    padding: 10px;
+    max-width: 240px;
+    max-height: 260px;
+    background: #55748a;
+    text-align: center;
+    font-size: 16px;
+    margin: 20px;
+    z-index: 100;
+}
+
+/*
+    .am-submenu {
+        width: auto;
+    }
+
+    .am-submenu ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        border: 1px solid #989898;
+        border-radius: 10px;
+        background: #e7e7e7;
+    }
+
+    .am-submenu li {
+        border-bottom: 1px solid #989898;
+    }
+
+    .am-submenu li:lastchild {
+        border-bottom: none;
+    }
+
+    .am-submenu li:hover {
+        background: #75c8ff;
+    }
+
+    .am-submenu a {
+        display: block;
+        padding: 10px 30px;
+        text-decoration: none;
+        color: #406485;
+    }
+*/
+
 
 .diary {
     margin: 64px auto 0 auto;
     padding: 32px;
-    max-width: 1200px;
+    max-width: 1024px;
     border-radius: 16px;
     background: #ffffff1f;
+}
+
+.diary h2 {
+    font-size: 1.8rem;
+    border-top: 5px solid rgba(0, 255, 255, 0.555);
+    margin-bottom: 10px;
+}
+
+article {
+    font-size: 20px;
+}
+
+.diary-excerpt p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.diary-excerpt a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.diary-excerpt a:hover {
+    text-decoration: underline;
+}
+
+.diary-full {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+.diary-full.open {
+    max-height: 1500px;
+    /* Adjust this value according to your content size */
 }
