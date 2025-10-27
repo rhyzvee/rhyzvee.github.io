@@ -11,9 +11,12 @@ header {
 body {
     justify-content: center;
     text-align: center;
-    background: url(images/starry-sky.jpg) center top no-repeat;
+    background-image: url(images/starry-sky.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
     background-size: cover;
     background-color: #1a1a3a;
+    background-attachment: fixed;
     color: #FFFFFF;
     font-size: larger;
 }
@@ -95,7 +98,7 @@ hr {
     background: #55748a;
     text-align: center;
     font-size: 16px;
-    margin: 20px;
+    margin: auto;
     z-index: 100;
 }
 
