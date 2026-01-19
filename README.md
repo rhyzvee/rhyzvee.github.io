@@ -1,9 +1,9 @@
 # rhyzvee.github.io
-A (clone) host repo for the homepage.
+A (clone) host repo for the homepage. Also hosted on https://rhyzvee.neocities.org.
 
-Currently a clone of https://rhyzvee.neocities.org. Files are updated manually after some revision on local side using VSCode, or on online with GitHub.
+Files are updated manually after some revision on local side using VSCode, or on online with GitHub.
 
-Expected update timing: Irregularly
+Expected update timing: Per season
 
 # Attachment Copyrights
 Images used for the site are subject to copyright. Below are exceptional.
